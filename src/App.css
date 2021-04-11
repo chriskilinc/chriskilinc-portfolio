@@ -1,38 +1,132 @@
-.App {
-  text-align: center;
+:root {
+  --colorTeal: rgba(79, 192, 141, 0.5);
+  --colorRed: hsl(12.7, 97.4%, 55.3%);
+  --colorDarkRed: hsl(345.8, 68.4%, 50.4%);
+  --colorLightRed: hsl(358.7, 100%, 73.5%);
+  --colorDeepRed: #f41851;
+  --colorOrange: #ff9966;
+  --colorCream: #fcfbe3;
+}
+::selection {
+  background: var(--colorLightRed); /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: var(--colorLightRed); /* Gecko Browsers */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#app {
+  /* text-align: center; */
+  font-family: "Rubik", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+  line-height: 1.4;
+  padding: 8vh 10vw;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0;
+}
+h2 {
+  margin-bottom: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+p {
+  font-size: 18px;
+  max-width: 32em;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1em;
+  line-height: 1;
+  color: inherit;
+}
+a.link {
+  text-decoration: none;
+  font-size: 1em;
+  line-height: 1;
+  color: inherit;
+}
+
+.arrow-back {
+  color: var(--colorLightRed) !important;
+}
+
+/* Highlighted */
+.highlighted {
+  position: relative;
+  white-space: nowrap;
+}
+.highlighted::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 66%;
+  left: -0.1em;
+  right: -0.1em;
+  bottom: 0;
+  transition: top 200ms cubic-bezier(0, 0.8, 0.13, 1);
+  background-color: var(--colorLightRed);
+  border-radius: 0 5px 5px 0px;
+}
+.highlighted:focus{
+  color: var(--colorCream);
+  outline: none;
+}
+.highlighted:focus::after {
+  top: 10%;
+}
+.highlighted:hover {
+  color: var(--colorCream);
+  outline: none;
+}
+.highlighted:hover::after {
+  top: 10%;
+}
+
+/* Social */
+.social {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.social img {
+  width: 26px;
+  height: 26px;
+  padding: 0 0 4px 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 450px) {
+  .social img {
+    width: 22px;
+    height: 22px;
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+
+.social a .icon {
+  transition: cubic-bezier(0.19, 1, 0.22, 1) 0.25s;
+  margin: 0 8px 0 0;
+  border-bottom: 2.5px solid transparent;
+  outline: none !important;
+}
+.social a .icon:hover {
+  border-color: var(--colorLightRed);
+}
+.social a .icon:focus {
+  border-color: var(--colorLightRed);
+}
+
+.social .link {
+  transition: cubic-bezier(0.19, 1, 0.22, 1) 0.25s;
+  border-bottom: 2.5px solid transparent;
+  outline: none !important;
+}
+.social .link:hover {
+  border-color: var(--colorLightRed);
+}
+.social .link:focus {
+  border-color: var(--colorLightRed);
 }
