@@ -20,9 +20,6 @@ function App() {
         </header>
         <main>
           <Switch>
-            <Route path="/about">
-              <About />
-            </Route>
             <Route path="/developer">
               <Developer />
             </Route>
@@ -55,10 +52,6 @@ function Home() {
       <p>Whenever I'm not programming, I enjoy playing and producing music, sometimes draw, paint and I do occasionally brew beers.</p>
     </section>
   )
-}
-
-function About() {
-  return <h2>About</h2>;
 }
 
 function Developer() {
