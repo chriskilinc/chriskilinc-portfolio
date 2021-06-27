@@ -12,6 +12,7 @@ variables:
   tag: '$(Build.BuildId)'
   app: 'chriskilinc'
   imageName: '$(app):$(tag)'
+  buildDirectory: 'build'
 
 stages:
 - stage: Build
@@ -36,6 +37,6 @@ stages:
         script: yarn run build
     - task: PublishBuildArtifacts@1
       inputs:
-        PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+        PathtoPublish: '$(buildDirectory)'
         ArtifactName: 'drop'
         publishLocation: 'Container'
