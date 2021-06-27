@@ -34,8 +34,8 @@ stages:
     - task: CmdLine@2
       inputs:
         script: yarn run build
-    - task: DownloadFileshareArtifacts@1
+    - task: PublishBuildArtifacts@1
       inputs:
-        filesharePath: 'build'
-        artifactName: 'drop'
-        downloadPath: '$(System.ArtifactsDirectory)'
+        PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+        ArtifactName: 'drop'
+        publishLocation: 'Container'
