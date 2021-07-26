@@ -26,6 +26,10 @@ function App() {
             </Route>
           </Switch>
           <Social />
+          <section id="projects">
+            <h2>Projects</h2>
+            <a className="text-pigments" target="blank" href="https://www.pigments.chriskilinc.com/">PRIGMENTS</a>
+          </section>
         </main>
       </div>
     </Router>

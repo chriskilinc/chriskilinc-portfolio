@@ -2,16 +2,38 @@
   --colorTeal: rgba(79, 192, 141, 0.5);
   --colorRed: hsl(12.7, 97.4%, 55.3%);
   --colorDarkRed: hsl(345.8, 68.4%, 50.4%);
-  --colorLightRed: hsl(358.7, 100%, 73.5%);
+  /* --colorLightRed: hsl(358.7, 100%, 73.5%); */
+  --colorLightRed: #f27281;
+  --colorLightOrange: #f49e73;
+  --colorCreamyellow: #f7d88b;
   --colorDeepRed: #f41851;
   --colorOrange: #ff9966;
   --colorCream: #fcfbe3;
+  --colorWhite: #f5f5f5;
+  --colorBlack: #2c3e50;
+  --colorDarkBlack: #000;
+
+  --colorText: var(--colorBlack);
+  --colorPrimary: var(--colorLightRed);
+  --colorBackground: var(--colorWhite);
+  --iconFilter: invert(0%);
 }
 ::selection {
-  background: var(--colorLightRed); /* WebKit/Blink Browsers */
+  background: var(--colorPrimary); /* WebKit/Blink Browsers */
 }
 ::-moz-selection {
-  background: var(--colorLightRed); /* Gecko Browsers */
+  background: var(--colorPrimary); /* Gecko Browsers */
+}
+
+.theme-dark {
+  --colorText: var(--colorWhite);
+  --colorBackground: var(--colorDarkBlack);
+  --colorPrimary: var(--colorDeepRed);
+  --iconFilter: invert(100%);
+}
+
+body {
+ background-color: var(--colorBackground);
 }
 
 #app {
@@ -19,9 +41,15 @@
   font-family: "Rubik", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
+  color: var(--colorText);
   line-height: 1.4;
   padding: 8vh 10vw;
+}
+
+#projects {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
 }
 
 h1 {
@@ -50,8 +78,19 @@ a.link {
   color: inherit;
 }
 
+.text-pigments {
+  font-family: "psyche";
+  font-weight: 400;
+  font-size: 3rem;
+  transition: ease-in-out 200ms;
+}
+
+.text-pigments:hover, .text-pigments:focus {
+  color: #df8039;
+}
+
 .arrow-back {
-  color: var(--colorLightRed) !important;
+  color: var(--colorPrimary) !important;
 }
 
 /* Highlighted */
@@ -65,10 +104,10 @@ a.link {
   z-index: -1;
   top: 66%;
   left: -0.1em;
-  right: -0.1em;
+  right: -0.15em;
   bottom: 0;
   transition: top 200ms cubic-bezier(0, 0.8, 0.13, 1);
-  background-color: var(--colorLightRed);
+  background-color: var(--colorPrimary);
   border-radius: 0 5px 5px 0px;
 }
 .highlighted:focus{
@@ -97,6 +136,7 @@ a.link {
   width: 26px;
   height: 26px;
   padding: 0 0 4px 0;
+  filter: var(--iconFilter);
 }
 
 @media screen and (max-width: 450px) {
@@ -113,10 +153,10 @@ a.link {
   outline: none !important;
 }
 .social a .icon:hover {
-  border-color: var(--colorLightRed);
+  border-color: var(--colorPrimary);
 }
 .social a .icon:focus {
-  border-color: var(--colorLightRed);
+  border-color: var(--colorPrimary);
 }
 
 .social .link {
@@ -125,8 +165,8 @@ a.link {
   outline: none !important;
 }
 .social .link:hover {
-  border-color: var(--colorLightRed);
+  border-color: var(--colorPrimary);
 }
 .social .link:focus {
-  border-color: var(--colorLightRed);
+  border-color: var(--colorPrimary);
 }
