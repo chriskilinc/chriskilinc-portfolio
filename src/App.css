@@ -170,3 +170,23 @@ a.link {
 .social .link:focus {
   border-color: var(--colorPrimary);
 }
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+  flex-wrap:wrap;
+}
+
+.gallery a {
+  padding: 0.5rem 0.5rem 0 0.5rem;
+  margin-bottom: 0.5rem;
+  line-height: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.gallery a:hover, .gallery a:focus {
+  background: var(--colorDarkBlack);
+  color: var(--colorBackground);
+}

@@ -8,6 +8,7 @@ import './App.css';
 import { Developer } from './pages/Developer';
 import { Home } from './pages/Home';
 import { Social } from './pages/Social';
+import { Spotify } from './pages/Spotify';
 
 function App() {
   return (
@@ -20,6 +21,9 @@ function App() {
           <Switch>
             <Route path="/developer">
               <Developer />
+            </Route>
+            <Route path="/spotify">
+              <Spotify />
             </Route>
             <Route path="/">
               <Home />
