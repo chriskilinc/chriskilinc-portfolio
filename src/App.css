@@ -89,6 +89,16 @@ a.link {
   color: #df8039;
 }
 
+.text-scaletheory {
+  font-weight: 400;
+  font-size: 3rem;
+  transition: ease-in-out 200ms;
+}
+
+.text-scaletheory:hover, .text-scaletheory:focus {
+  color: #c47575;
+}
+
 .arrow-back {
   color: var(--colorPrimary) !important;
 }

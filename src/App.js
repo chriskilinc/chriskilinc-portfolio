@@ -33,6 +33,7 @@ function App() {
           <section id="projects">
             <h2>Projects</h2>
             <a className="text-pigments" target="blank" href="https://www.pigments.chriskilinc.com/">PRIGMENTS</a>
+            <a className="text-scaletheory" target="blank" href="https://www.scaletheory.chriskilinc.com/">SCALETHEORY</a>
           </section>
         </main>
       </div>
