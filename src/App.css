@@ -99,6 +99,17 @@ a.link {
   color: #c47575;
 }
 
+.text-sleepy {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 3rem;
+  transition: ease-in-out 200ms;
+}
+
+.text-sleepy:hover, .text-sleepy:focus {
+  /* TODO: add a dark mode on hover? */
+  color: #03012d;
+}
+
 .arrow-back {
   color: var(--colorPrimary) !important;
 }
