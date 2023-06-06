@@ -26,9 +26,9 @@ function App() {
           <Social />
           <section id="projects">
             <h2>Projects</h2>
-            <a className="text-pigments" target="blank" href="https://pigments.chriskilinc.com/">PRIGMENTS</a>
-            <a className="text-scaletheory" target="blank" href="https://scaletheory.chriskilinc.com/">SCALETHEORY</a>
-            <a className="text-sleepy" target="blank" href="https://sleepy.chriskilinc.com/">sleepy</a>
+            <a className="text-pigments" target="blank" rel="noreferrer noopener" href="https://pigments.chriskilinc.com/">PRIGMENTS</a>
+            <a className="text-scaletheory" target="blank" rel="noreferrer noopener" href="https://scaletheory.chriskilinc.com/">SCALETHEORY</a>
+            <a className="text-sleepy" target="blank" rel="noreferrer noopener" href="https://sleepy.chriskilinc.com/">sleepy</a>
           </section>
         </main>
       </div>
