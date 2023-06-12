@@ -78,11 +78,20 @@ a.link {
   color: inherit;
 }
 
+#projects a {
+  font-size: 3rem;
+  transition: ease-in-out 200ms;
+}
+
+@media screen and (max-width: 420px) {
+  #projects a {
+    font-size: 2rem;
+  }
+}
+
 .text-pigments {
   font-family: "psyche";
   font-weight: 400;
-  font-size: 3rem;
-  transition: ease-in-out 200ms;
 }
 
 .text-pigments:hover, .text-pigments:focus {
@@ -91,8 +100,6 @@ a.link {
 
 .text-scaletheory {
   font-weight: 400;
-  font-size: 3rem;
-  transition: ease-in-out 200ms;
 }
 
 .text-scaletheory:hover, .text-scaletheory:focus {
@@ -101,8 +108,6 @@ a.link {
 
 .text-sleepy {
   font-family: 'Quicksand', sans-serif;
-  font-size: 3rem;
-  transition: ease-in-out 200ms;
 }
 
 .text-sleepy:hover, .text-sleepy:focus {
@@ -151,6 +156,7 @@ a.link {
   display: flex;
   flex-direction: row;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .social img {
