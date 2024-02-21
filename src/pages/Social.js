@@ -31,11 +31,11 @@ export function Social() {
       </Link>
 
       <a
-        href="mailto:chriskilinc@gmail.com"
+        href="mailto:christopher.kilinc@gmail.com"
         target="_blank"
         rel="noopener noreferrer"
         className="link"
-      >chriskilinc@gmail.com
+      >christopher.kilinc@gmail.com
       </a>
     </section>
   );
