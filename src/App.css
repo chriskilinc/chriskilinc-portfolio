@@ -43,7 +43,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color: var(--colorText);
   line-height: 1.4;
-  padding: 8vh 10vw;
+  margin: 8vh 10vw;
 }
 
 #projects {
