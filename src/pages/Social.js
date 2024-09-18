@@ -2,6 +2,7 @@ import React from "react";
 import githubIcon from "../assets/github_logo.svg";
 import linkedinLogo from "../assets/linkedin_logo.svg";
 import twitterIcon from "../assets/twitter_logo.svg";
+import kofiIcon from "../assets/ko-fi-logo.svg";
 import spotifyIcon from "../assets/spotify_logo.svg";
 import { Link } from "react-router-dom";
 
@@ -29,6 +30,10 @@ export function Social() {
       <Link to="/spotify" className="icon">
         <img className="icon" src={spotifyIcon} alt="Spotify icon" />
       </Link>
+
+      <a className="icon" href="https://ko-fi.com/cloudychris" target="_blank" title="ko-fi" rel="noreferrer noopener">
+        <img className="icon" src={kofiIcon} alt="ko-fi icon" />
+      </a>
 
       <a
         href="mailto:christopher.kilinc@gmail.com"
