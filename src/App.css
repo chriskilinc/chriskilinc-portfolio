@@ -18,11 +18,15 @@
   --colorBackground: var(--colorWhite);
   --iconFilter: invert(0%);
 }
+
 ::selection {
-  background: var(--colorPrimary); /* WebKit/Blink Browsers */
+  background: var(--colorPrimary);
+  /* WebKit/Blink Browsers */
 }
+
 ::-moz-selection {
-  background: var(--colorPrimary); /* Gecko Browsers */
+  background: var(--colorPrimary);
+  /* Gecko Browsers */
 }
 
 .theme-dark {
@@ -33,7 +37,7 @@
 }
 
 body {
- background-color: var(--colorBackground);
+  background-color: var(--colorBackground);
 }
 
 #app {
@@ -56,6 +60,7 @@ h1 {
   font-size: 2.5rem;
   margin-bottom: 0;
 }
+
 h2 {
   margin-bottom: 0;
 }
@@ -71,6 +76,7 @@ a {
   line-height: 1;
   color: inherit;
 }
+
 a.link {
   text-decoration: none;
   font-size: 1em;
@@ -94,7 +100,8 @@ a.link {
   font-weight: 400;
 }
 
-.text-pigments:hover, .text-pigments:focus {
+.text-pigments:hover,
+.text-pigments:focus {
   color: #df8039;
 }
 
@@ -102,15 +109,30 @@ a.link {
   font-weight: 400;
 }
 
-.text-scaletheory:hover, .text-scaletheory:focus {
+.text-scaletheory:hover,
+.text-scaletheory:focus {
   color: #c47575;
+}
+
+.text-harmonize {
+  font-weight: 400;
+  font-family: "Playwrite GB S", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.text-harmonize:hover,
+.text-harmonize:focus {
+  color: #D95F59;
 }
 
 .text-sleepy {
   font-family: 'Quicksand', sans-serif;
 }
 
-.text-sleepy:hover, .text-sleepy:focus {
+.text-sleepy:hover,
+.text-sleepy:focus {
   /* TODO: add a dark mode on hover? */
   color: #96a3fc;
 }
@@ -124,6 +146,7 @@ a.link {
   position: relative;
   white-space: nowrap;
 }
+
 .highlighted::after {
   content: "";
   position: absolute;
@@ -136,17 +159,21 @@ a.link {
   background-color: var(--colorPrimary);
   border-radius: 0 5px 5px 0px;
 }
-.highlighted:focus{
+
+.highlighted:focus {
   color: var(--colorCream);
   outline: none;
 }
+
 .highlighted:focus::after {
   top: 10%;
 }
+
 .highlighted:hover {
   color: var(--colorCream);
   outline: none;
 }
+
 .highlighted:hover::after {
   top: 10%;
 }
@@ -179,9 +206,11 @@ a.link {
   border-bottom: 2.5px solid transparent;
   outline: none !important;
 }
+
 .social a .icon:hover {
   border-color: var(--colorPrimary);
 }
+
 .social a .icon:focus {
   border-color: var(--colorPrimary);
 }
@@ -191,9 +220,11 @@ a.link {
   border-bottom: 2.5px solid transparent;
   outline: none !important;
 }
+
 .social .link:hover {
   border-color: var(--colorPrimary);
 }
+
 .social .link:focus {
   border-color: var(--colorPrimary);
 }
@@ -202,7 +233,7 @@ a.link {
   display: flex;
   justify-content: center;
   padding: 2rem 0;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
 }
 
 .gallery a {
@@ -213,7 +244,8 @@ a.link {
   font-weight: 600;
 }
 
-.gallery a:hover, .gallery a:focus {
+.gallery a:hover,
+.gallery a:focus {
   background: var(--colorDarkBlack);
   color: var(--colorBackground);
 }
