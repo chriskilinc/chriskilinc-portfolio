@@ -9,6 +9,7 @@ import { Developer } from './pages/Developer';
 import { Home } from './pages/Home';
 import { Social } from './pages/Social';
 import { Spotify } from './pages/Spotify';
+import { Woodhill } from './pages/Woodhill';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         </header>
         <main>
           <Routes>
+            <Route path="/woodhill" element={<Woodhill />} />
             <Route path="/developer" element={<Developer />} />
             <Route path="/spotify" element={<Spotify />} />
             <Route path="/" element={<Home />} />
