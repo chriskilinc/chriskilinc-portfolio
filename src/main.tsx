@@ -19,3 +19,11 @@ const appInsights = new ApplicationInsights({
 });
 appInsights.loadAppInsights();
 appInsights.trackPageView(); // Manually call trackPageView to establish the current user/session/pageview
+
+console.log(`%c
+       __          __         __     __ __ __             
+.----.|  |--.----.|__|.-----.|  |--.|__|  |__|.-----.----.
+|  __||     |   _||  ||__ --||    < |  |  |  ||     |  __|
+|____||__|__|__|  |__||_____||__|__||__|__|__||__|__|____|
+
+`, 'color: #f27281; font-family: monospace; font-size: 10px;');
