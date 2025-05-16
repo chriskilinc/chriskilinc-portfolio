@@ -70,6 +70,10 @@ p {
   max-width: 32em;
 }
 
+blockquote {
+  max-width: 32em;
+}
+
 a {
   text-decoration: none;
   font-size: 1em;
@@ -124,11 +128,11 @@ a.link {
 
 .text-harmonize:hover,
 .text-harmonize:focus {
-  color: #D95F59;
+  color: #d95f59;
 }
 
 .text-sleepy {
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 
 .text-sleepy:hover,
@@ -248,4 +252,24 @@ a.link {
 .gallery a:focus {
   background: var(--colorDarkBlack);
   color: var(--colorBackground);
+}
+
+.woodhill-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.image-main {
+  height: 14rem;
+}
+
+@media screen and (max-width: 768px) {
+  .woodhill-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-main {
+    margin-bottom: 2rem;
+  }
 }
