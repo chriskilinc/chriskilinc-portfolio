@@ -9,6 +9,7 @@ import { Developer } from './pages/Developer.tsx';
 import { Home } from './pages/Home.tsx';
 import { Social } from './pages/Social.tsx';
 import { Spotify } from './pages/Spotify.tsx';
+import { Woodhill } from './pages/Woodhill.tsx';
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
         </header>
         <main>
           <Routes>
+            <Route path="/woodhill" element={<Woodhill />} />
             <Route path="/developer" element={<Developer />} />
             <Route path="/spotify" element={<Spotify />} />
             <Route path="/" element={<Home />} />
