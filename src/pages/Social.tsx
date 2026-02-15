@@ -48,16 +48,6 @@ export function Social() {
       </Link>
 
       <a
-        className="icon"
-        href="https://ko-fi.com/cloudychris"
-        target="_blank"
-        title="ko-fi"
-        rel="noreferrer noopener"
-      >
-        <img className="icon" src={kofiIcon} alt="ko-fi icon" />
-      </a>
-
-      <a
         href="mailto:christopher.kilinc@gmail.com"
         target="_blank"
         rel="noopener noreferrer"
