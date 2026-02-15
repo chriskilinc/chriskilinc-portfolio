@@ -1,7 +1,6 @@
 import githubIcon from "../assets/github_logo.svg";
 import linkedinLogo from "../assets/linkedin_logo.svg";
 import twitterIcon from "../assets/twitter_logo.svg";
-import kofiIcon from "../assets/ko-fi-logo.svg";
 import spotifyIcon from "../assets/spotify_logo.svg";
 import woodhillIcon from "../assets/woodhill-logo.svg";
 import { Link } from "react-router-dom";
